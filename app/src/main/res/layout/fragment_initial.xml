@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.InitialFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview_initial_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic_intro"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_initial_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/find_your_dream_house_nat_the_best_price"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dp_28"
+        android:textSize="@dimen/sp_22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_initial_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_initial_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_15"
+        android:text="@string/we_re_here_for_every_ownership_move_you_face"
+        app:layout_constraintStart_toStartOf="@+id/textview_initial_first"
+        app:layout_constraintTop_toBottomOf="@+id/textview_initial_first" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtonLetsStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_28"
+        android:layout_marginEnd="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/let_s_start"
+        style="@style/OrangeButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_initial_second" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_orange_border"
+        style="@style/all_edit_field"
+        android:text="@string/login"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_28"
+        android:layout_marginEnd="@dimen/dp_28"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonLetsStart"
+        app:layout_constraintStart_toStartOf="@+id/ButtonLetsStart"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonLetsStart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

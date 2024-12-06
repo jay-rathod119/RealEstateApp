@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dp_5"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingEnd="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_30">
+
+    <View
+        android:id="@+id/viewSlide"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/gray_solid_round_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:text="@string/fill_the_form"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_17"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewSlide" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EditTextFirstName"
+        style="@style/all_edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:hint="@string/first_name"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPaitentnumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EditTextLastName"
+        style="@style/all_edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:hint="@string/last_name"
+        app:layout_constraintTop_toBottomOf="@id/EditTextFirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPaitentnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rgGenderGroup"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextLastName">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/radio_button_background"
+            android:buttonTint="@drawable/text_color_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="@string/male"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/sp_13" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:background="@drawable/radio_button_background"
+            android:buttonTint="@drawable/text_color_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="@string/female"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/sp_13" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rbTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_button_background"
+            android:buttonTint="@drawable/text_color_selector"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="@string/trans"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="@dimen/sp_13" />
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextLayoutAge"
+        style="@style/all_edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:hint="@string/age"
+        app:endIconDrawable="@drawable/ic_down_arrow"
+        app:endIconMode="custom"
+        app:layout_constraintTop_toBottomOf="@id/rgGenderGroup">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ButtonBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="@string/buy"
+        style="@style/OrangeButtonStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextLayoutAge" />
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

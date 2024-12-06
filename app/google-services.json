@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "847718646690",
+    "firebase_url": "https://fir-kotlin-3ada3-default-rtdb.firebaseio.com",
+    "project_id": "fir-kotlin-3ada3",
+    "storage_bucket": "fir-kotlin-3ada3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847718646690:android:918e84068d20b6bee268fb",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847718646690-g4l7vni6ftjdk66mlekrobqoiabvtria.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iCFRwIpoBk4Ij6rBpI2CnHCyFak8lZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847718646690-g4l7vni6ftjdk66mlekrobqoiabvtria.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847718646690:android:78cc949b9dc187a3e268fb",
+        "android_client_info": {
+          "package_name": "com.solutelabs.realestateapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847718646690-knerauktejn6c77pninsnv4cea71nr6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solutelabs.realestateapp",
+            "certificate_hash": "c48a6d479a9277e8323e82db5c6850bf81fdac5e"
+          }
+        },
+        {
+          "client_id": "847718646690-g4l7vni6ftjdk66mlekrobqoiabvtria.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-iCFRwIpoBk4Ij6rBpI2CnHCyFak8lZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847718646690-g4l7vni6ftjdk66mlekrobqoiabvtria.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
