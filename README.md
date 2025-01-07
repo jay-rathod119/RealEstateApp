@@ -19,6 +19,11 @@ A feature-rich real estate application developed for practice purposes, showcasi
   - Detailed view of individual properties with all relevant information.
 - **Settings**:
   - Manage user preferences and app configurations.
+ 
+  ## 📸 Screenshots
+An overview of the app's design and functionality:  
+
+![App Screenshots](/real_estate_app_screenshots.png)  
 
 ## 🛠️ Technologies Used
 - **Kotlin**: Programming language.
